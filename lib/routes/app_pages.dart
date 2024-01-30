@@ -86,22 +86,22 @@ import 'app_routes.dart';
 
 class AppPages {
   static var list = [
-    // GetPage(
-    //   name: AppRoutes.initial,
-    //   page: () => Sizer(
-    //     builder: (context, orientation, deviceType) {
-    //       return AnnotatedRegion<SystemUiOverlayStyle>(
-    //         value: const SystemUiOverlayStyle(
-    //           statusBarColor: AppColor.transparent,
-    //           statusBarIconBrightness: Brightness.dark,
-    //           systemNavigationBarIconBrightness: Brightness.light,
-    //         ),
-    //         child: ChooseYourPlanScreen(),
-    //       );
-    //     },
-    //   ),
-    //   binding: ChooseYourPlanBinding(),
-    // ),
+    GetPage(
+      name: AppRoutes.initial,
+      page: () => Sizer(
+        builder: (context, orientation, deviceType) {
+          return AnnotatedRegion<SystemUiOverlayStyle>(
+            value: const SystemUiOverlayStyle(
+              statusBarColor: AppColor.transparent,
+              statusBarIconBrightness: Brightness.dark,
+              systemNavigationBarIconBrightness: Brightness.light,
+            ),
+            child: ChooseYourPlanScreen(),
+          );
+        },
+      ),
+      binding: ChooseYourPlanBinding(),
+    ),
     GetPage(
       name: AppRoutes.home,
       page: () => Sizer(
