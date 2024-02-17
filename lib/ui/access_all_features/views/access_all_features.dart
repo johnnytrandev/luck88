@@ -300,26 +300,26 @@ class AccessAllFeaturesScreen extends StatelessWidget {
       margin: EdgeInsets.only(left: AppSizes.width_18),
       child: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Image.asset(
-                Constant.getAssetIcons() + "ic_noads.webp",
-                height: AppSizes.height_2_5,
-                width: AppSizes.height_2_5,
-              ),
-              SizedBox(width: AppSizes.width_2),
-              Text(
-                "txtRemoveAds".tr,
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                  color: AppColor.txtColor666,
-                  fontSize: AppFontSize.size_12_5,
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
-            ],
-          ),
+          // Row(
+          //   mainAxisAlignment: MainAxisAlignment.start,
+          //   children: [
+          //     Image.asset(
+          //       Constant.getAssetIcons() + "ic_noads.webp",
+          //       height: AppSizes.height_2_5,
+          //       width: AppSizes.height_2_5,
+          //     ),
+          //     SizedBox(width: AppSizes.width_2),
+          //     Text(
+          //       "txtRemoveAds".tr,
+          //       textAlign: TextAlign.left,
+          //       style: TextStyle(
+          //         color: AppColor.txtColor666,
+          //         fontSize: AppFontSize.size_12_5,
+          //         fontWeight: FontWeight.w400,
+          //       ),
+          //     ),
+          //   ],
+          // ),
           Container(
             margin: EdgeInsets.symmetric(vertical: AppSizes.height_2_2),
             child: Row(

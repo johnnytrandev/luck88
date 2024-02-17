@@ -45,7 +45,7 @@ class HomeScreen extends StatelessWidget {
                       Expanded(
                         child: Column(
                           children: [
-                            _widgetTopBar(logic),
+                            // _widgetTopBar(logic),
                             _widgetPageView(logic),
                           ],
                         ),
@@ -186,8 +186,7 @@ class HomeScreen extends StatelessWidget {
   }
 
   _widgetPageView(HomeController logic) {
-    // if (luckData != null && luckData.hasOwnProperty('url')) {
-      print('_widgetPageView ${luckData}');
+    if (luckData != null && luckData['isShown'] == 1) {
       return Expanded(
         child: PageView(
           controller: logic.pageController,
@@ -202,56 +201,68 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       );
-    // } else {
-    //   return Expanded(
-    //     child: PageView(
-    //       controller: logic.pageController,
-    //       physics: const NeverScrollableScrollPhysics(),
-    //       scrollDirection: Axis.horizontal,
-    //       onPageChanged: (int page) {},
-    //       children: [
-    //         WebViewScreen(''),
-    //         PlanScreen(),
-    //         ReportScreen(),
-    //         MeScreen(),
-    //       ],
-    //     ),
-    //   );
-    // }
+    } else {
+      return Expanded(
+        child: PageView(
+          controller: logic.pageController,
+          physics: const NeverScrollableScrollPhysics(),
+          scrollDirection: Axis.horizontal,
+          onPageChanged: (int page) {},
+          children: [
+            PlanScreen(),
+            ReportScreen(),
+            MeScreen(),
+          ],
+        ),
+      );
+    }
   }
 
   _bottomNavigationBar(HomeController logic) {
     List<BottomNavigationBarItem> items = [
       _bottomNavigationBarItem(
         icon: Constant.getAssetIcons() + "ic_plan.webp",
-        label: 'txtPlan'.tr,
+        label: '', //'txtPlan'.tr,
         index: 0,
       ),
       _bottomNavigationBarItem(
         icon: Constant.getAssetIcons() + "ic_report.webp",
-        label: 'txtReports'.tr,
+        label: '', //'txtReports'.tr,
         index: 1,
       ),
       _bottomNavigationBarItem(
         icon: Constant.getAssetIcons() + "ic_me.webp",
-        label: 'txtMe'.tr,
+        label: '', //'txtMe'.tr,
         index: 2,
       ),
     ];
-    print('luckData ${luckData}');
     if (luckData != null && luckData['isShown'] == 1) {
-      items.insert(0, 
+      items = [
         BottomNavigationBarItem(
           icon: Image.network(
             luckData['icon'],
-            width: 48,
-            height: 48,
+            width: 35,
+            height: 35,
           ),
           label: luckData['label'],
         ),
-      );
+        _bottomNavigationBarItem(
+          icon: Constant.getAssetIcons() + "ic_plan.webp",
+          label: '', //'txtPlan'.tr,
+          index: 1,
+        ),
+        _bottomNavigationBarItem(
+          icon: Constant.getAssetIcons() + "ic_report.webp",
+          label: '', //'txtReports'.tr,
+          index: 2,
+        ),
+        _bottomNavigationBarItem(
+          icon: Constant.getAssetIcons() + "ic_me.webp",
+          label: '', //'txtMe'.tr,
+          index: 3,
+        ),
+      ];
     }
-
 
     return Column(
       mainAxisSize: MainAxisSize.min,

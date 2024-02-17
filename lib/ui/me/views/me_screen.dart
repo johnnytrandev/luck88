@@ -68,7 +68,7 @@ class MeScreen extends StatelessWidget {
               _soundOptionsDialog();
             },
           ),
-          _goPremiumButton(),
+          // _goPremiumButton(),
           _spaceWidget(),
           _dividerWidget(),
           _spaceWidget(),
@@ -595,65 +595,65 @@ class MeScreen extends StatelessWidget {
     return GetBuilder<HomeController>(
         id: Constant.idMeGoPremiumBtn,
         builder: (logic) {
-          if (logic.isShowPremiumBtn) {
-            return Container(
-              width: AppSizes.fullWidth,
-              margin: EdgeInsets.only(
-                  top: AppSizes.height_4,
-                  right: AppSizes.width_10,
-                  left: AppSizes.width_10),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(100.0),
-                gradient: const LinearGradient(
-                  begin: Alignment.centerLeft,
-                  end: Alignment.centerRight,
-                  colors: [
-                    AppColor.greenGradualStartColor,
-                    AppColor.greenGradualEndColor,
-                  ],
-                ),
-              ),
-              child: TextButton(
-                onPressed: () {
-                  _meController.onPremiumBtnClick();
-                },
-                style: ButtonStyle(
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(100.0),
-                      side: const BorderSide(
-                        color: AppColor.transparent,
-                        width: 0.7,
-                      ),
-                    ),
-                  ),
-                ),
-                child: Container(
-                  padding: EdgeInsets.symmetric(vertical: AppSizes.height_0_8),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset(
-                        Constant.getAssetIcons() + "ic_noads.webp",
-                        height: AppSizes.height_2_5,
-                        width: AppSizes.height_2_5,
-                      ),
-                      SizedBox(width: AppSizes.width_2),
-                      Text(
-                        "txtGoPremium".tr.toUpperCase(),
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: AppColor.white,
-                          fontSize: AppFontSize.size_14,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            );
-          }
+          // if (logic.isShowPremiumBtn) {
+          //   return Container(
+          //     width: AppSizes.fullWidth,
+          //     margin: EdgeInsets.only(
+          //         top: AppSizes.height_4,
+          //         right: AppSizes.width_10,
+          //         left: AppSizes.width_10),
+          //     decoration: BoxDecoration(
+          //       borderRadius: BorderRadius.circular(100.0),
+          //       gradient: const LinearGradient(
+          //         begin: Alignment.centerLeft,
+          //         end: Alignment.centerRight,
+          //         colors: [
+          //           AppColor.greenGradualStartColor,
+          //           AppColor.greenGradualEndColor,
+          //         ],
+          //       ),
+          //     ),
+          //     child: TextButton(
+          //       onPressed: () {
+          //         _meController.onPremiumBtnClick();
+          //       },
+          //       style: ButtonStyle(
+          //         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          //           RoundedRectangleBorder(
+          //             borderRadius: BorderRadius.circular(100.0),
+          //             side: const BorderSide(
+          //               color: AppColor.transparent,
+          //               width: 0.7,
+          //             ),
+          //           ),
+          //         ),
+          //       ),
+          //       child: Container(
+          //         padding: EdgeInsets.symmetric(vertical: AppSizes.height_0_8),
+          //         child: Row(
+          //           mainAxisAlignment: MainAxisAlignment.center,
+          //           children: [
+          //             Image.asset(
+          //               Constant.getAssetIcons() + "ic_noads.webp",
+          //               height: AppSizes.height_2_5,
+          //               width: AppSizes.height_2_5,
+          //             ),
+          //             SizedBox(width: AppSizes.width_2),
+          //             Text(
+          //               "txtGoPremium".tr.toUpperCase(),
+          //               textAlign: TextAlign.center,
+          //               style: TextStyle(
+          //                 color: AppColor.white,
+          //                 fontSize: AppFontSize.size_14,
+          //                 fontWeight: FontWeight.w700,
+          //               ),
+          //             ),
+          //           ],
+          //         ),
+          //       ),
+          //     ),
+          //   );
+          // }
           return const SizedBox();
         });
   }

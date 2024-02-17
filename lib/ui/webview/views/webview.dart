@@ -19,12 +19,17 @@ class WebViewScreen extends StatefulWidget {
 
 class _WebViewScreenState extends State<WebViewScreen> {
   late final WebViewController controller;
+  bool isLoading=true;
 
   @override
   void initState() {
     super.initState();
-    print('_WebViewScreenState ${widget.url}');
-    controller = WebViewController()
+    controller = WebViewController.fromPlatformCreationParams(
+        const PlatformWebViewControllerCreationParams())
+      ..setNavigationDelegate(NavigationDelegate(
+          onPageFinished: (_) => setState(() {
+                isLoading = false;
+              })))
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..loadRequest(
         Uri.parse(widget.url),
@@ -37,9 +42,12 @@ class _WebViewScreenState extends State<WebViewScreen> {
       // appBar: AppBar(
         // title: const Text('Luck88'),
       // ),
-      body: WebViewWidget(
-        controller: controller,
-      ),
+      body: Stack(children: [
+        WebViewWidget(
+          controller: controller,
+        ),
+        if (isLoading) const Center(child: CircularProgressIndicator())
+      ]),
     );
   }
 }

@@ -269,7 +269,7 @@ class HistoryScreen extends StatelessWidget {
                       ),
                       SizedBox(height: AppSizes.height_0_8),
                       Image.asset(
-                        Constant.getAssetIcons() + "ic_workout_calories.webp",
+                        Constant.getAssetIcons() + "ic_workout_calories.png",
                         height: AppSizes.height_2_3,
                         width: AppSizes.height_2_3,
                       ),
@@ -408,7 +408,7 @@ class HistoryScreen extends StatelessWidget {
                                   ),
                                   Image.asset(
                                     Constant.getAssetIcons() +
-                                        "ic_workout_calories.webp",
+                                        "ic_workout_calories.png",
                                     height: AppSizes.height_2_3,
                                     width: AppSizes.height_2_3,
                                   ),

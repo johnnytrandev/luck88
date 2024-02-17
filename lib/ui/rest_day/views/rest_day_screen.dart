@@ -66,7 +66,7 @@ class RestDayScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
-            Constant.getAssetIcons() + "ic_rest.webp",
+            Constant.getAssetIcons() + "ic_rest.png",
             width: AppSizes.height_17_5,
             height: AppSizes.height_17_5,
           ),

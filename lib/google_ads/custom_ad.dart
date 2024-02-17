@@ -20,7 +20,7 @@ class _BannerAdClassState extends State<BannerAdClass> {
 
   @override
   void initState() {
-    _loadBanner();
+    // _loadBanner();
     super.initState();
   }
 

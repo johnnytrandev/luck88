@@ -11,8 +11,8 @@ import '../../../utils/debug.dart';
 import '../../../utils/utils.dart';
 
 class HomeController extends GetxController implements IAPCallback{
-  PageController pageController = PageController(initialPage: 1);
-  int currentIndex = 1;
+  PageController pageController = PageController(initialPage: 0);
+  int currentIndex = 0;
   int? currentGlass;
   DateTime? currentBackPressTime;
   bool isShowPremiumBtn = true;

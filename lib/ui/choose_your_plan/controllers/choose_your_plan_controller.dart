@@ -26,7 +26,7 @@ class ChooseYourPlanController extends GetxController {
           planImage: "ic_goal_lose_belly_fat.png"),
       ChooseYourPlanData(
           planName: "txtBuildMuscleStrength".tr,
-          planImage: "ic_goal_build_muscle_strength.webp"),
+          planImage: "ic_goal_build_muscle_strength.png"),
     ];
   }
 

@@ -87,7 +87,7 @@ class PerformExerciseController extends FullLifeCycleController
   @override
   void onInit() {
     addBindingObserver();
-    _loadInterstitialAd();
+    // _loadInterstitialAd();
     _argumentData();
     getPreferenceData();
     super.onInit();
