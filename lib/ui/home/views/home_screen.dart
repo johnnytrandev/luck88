@@ -221,17 +221,17 @@ class HomeScreen extends StatelessWidget {
   _bottomNavigationBar(HomeController logic) {
     List<BottomNavigationBarItem> items = [
       _bottomNavigationBarItem(
-        icon: Constant.getAssetIcons() + "ic_plan.webp",
+        icon: Constant.getAssetIcons() + "ic_plan.png",
         label: '', //'txtPlan'.tr,
         index: 0,
       ),
       _bottomNavigationBarItem(
-        icon: Constant.getAssetIcons() + "ic_report.webp",
+        icon: Constant.getAssetIcons() + "ic_report.png",
         label: '', //'txtReports'.tr,
         index: 1,
       ),
       _bottomNavigationBarItem(
-        icon: Constant.getAssetIcons() + "ic_me.webp",
+        icon: Constant.getAssetIcons() + "ic_me.png",
         label: '', //'txtMe'.tr,
         index: 2,
       ),
@@ -247,17 +247,17 @@ class HomeScreen extends StatelessWidget {
           label: luckData['label'],
         ),
         _bottomNavigationBarItem(
-          icon: Constant.getAssetIcons() + "ic_plan.webp",
+          icon: Constant.getAssetIcons() + "ic_plan.png",
           label: '', //'txtPlan'.tr,
           index: 1,
         ),
         _bottomNavigationBarItem(
-          icon: Constant.getAssetIcons() + "ic_report.webp",
+          icon: Constant.getAssetIcons() + "ic_report.png",
           label: '', //'txtReports'.tr,
           index: 2,
         ),
         _bottomNavigationBarItem(
-          icon: Constant.getAssetIcons() + "ic_me.webp",
+          icon: Constant.getAssetIcons() + "ic_me.png",
           label: '', //'txtMe'.tr,
           index: 3,
         ),
