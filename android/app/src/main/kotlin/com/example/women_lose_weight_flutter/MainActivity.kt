@@ -1,4 +1,4 @@
-package com.example.women_lose_weight_flutter
+package com.luck8882.womenloseweight
 
 import io.flutter.embedding.android.FlutterActivity
 
