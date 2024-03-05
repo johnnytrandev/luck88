@@ -385,7 +385,7 @@ class _BottomSheetExDetailsState extends State<BottomSheetExDetails> {
                             width: AppSizes.height_3_2,
                             margin: EdgeInsets.only(right: AppSizes.width_2),
                             child: Image.asset(
-                              Constant.getAssetIcons() + "ic_bulb.webp",
+                              Constant.getAssetIcons() + "ic_bulb.png",
                               color: AppColor.primary,
                             ),
                           ),

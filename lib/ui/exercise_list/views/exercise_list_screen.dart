@@ -162,7 +162,7 @@ class ExerciseListScreen extends StatelessWidget {
                                       right: AppSizes.width_2,
                                       left: AppSizes.width_1_3),
                                   child: Image.asset(
-                                    Constant.getAssetIcons() + "ic_bulb.webp",
+                                    Constant.getAssetIcons() + "ic_bulb.png",
                                     color: AppColor.white,
                                   ),
                                 ),
@@ -237,7 +237,7 @@ class ExerciseListScreen extends StatelessWidget {
                                 margin:
                                     EdgeInsets.only(right: AppSizes.width_2),
                                 child: Image.asset(
-                                  Constant.getAssetIcons() + "ic_bulb.webp",
+                                  Constant.getAssetIcons() + "ic_bulb.png",
                                   color: AppColor.white,
                                 ),
                               ),

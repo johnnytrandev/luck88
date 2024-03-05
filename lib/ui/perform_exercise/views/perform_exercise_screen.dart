@@ -190,7 +190,7 @@ class PerformExerciseScreen extends StatelessWidget {
             ),
             padding: EdgeInsets.all(AppSizes.height_1),
             child: Image.asset(
-              Constant.getAssetIcons() + "ic_bulb.webp",
+              Constant.getAssetIcons() + "ic_bulb.png",
               color: AppColor.white,
             ),
           ),

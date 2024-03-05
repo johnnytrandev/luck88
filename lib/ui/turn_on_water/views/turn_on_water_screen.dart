@@ -114,7 +114,7 @@ class TurnOnWaterScreen extends StatelessWidget {
                   height: AppSizes.height_3_3,
                   width: AppSizes.height_3_3,
                   child: Image.asset(
-                    Constant.getAssetIcons() + "ic_set_water.webp",
+                    Constant.getAssetIcons() + "ic_set_water.png",
                     color: AppColor.white,
                   ),
                 ),

@@ -41,7 +41,7 @@ class MeScreen extends StatelessWidget {
                   child: _commonFieldText(
                     "txtReminder".tr,
                     "",
-                    Icons.alarm,
+                    Icons.add_alert,
                     Constant.boolValueFalse,
                   ),
                 ),
@@ -61,7 +61,7 @@ class MeScreen extends StatelessWidget {
           _spaceWidget(h: AppSizes.height_3),
           _commonFieldText(
             "txtSoundOptions".tr,
-            "icon_setting_tts_voice.webp",
+            "icon_setting_tts_voice.png",
             null,
             Constant.boolValueTrue,
             onTap: () {
@@ -79,7 +79,7 @@ class MeScreen extends StatelessWidget {
               Expanded(
                 child: _commonFieldText(
                   "txtTurnOnWaterTracker".tr,
-                  "ic_set_water.webp",
+                  "ic_set_water.png",
                   null,
                   Constant.boolValueTrue,
                   onTap: () {},
@@ -112,7 +112,7 @@ class MeScreen extends StatelessWidget {
           _commonFieldText(
             "txtMyProfile".tr,
             "",
-            Icons.add_box_outlined,
+            Icons.person,
             Constant.boolValueFalse,
             onTap: () {
               Get.toNamed(AppRoutes.myProfile)!
@@ -145,7 +145,7 @@ class MeScreen extends StatelessWidget {
             child: Row(
               children: [
                 const Icon(
-                  Icons.translate,
+                  Icons.language,
                   color: AppColor.txtColor999,
                 ),
                 Expanded(
@@ -237,7 +237,7 @@ class MeScreen extends StatelessWidget {
           _spaceWidget(h: AppSizes.height_3),
           _commonFieldText(
             "txtCommonQuestions".tr,
-            "ic_bulb.webp",
+            "ic_bulb.png",
             null,
             Constant.boolValueTrue,
             onTap: () {
